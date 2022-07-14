@@ -1,0 +1,101 @@
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cabesera {
+  height: 70px;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  font-size: 50px;
+  font-family: "Courgette", cursive;
+  color: #fff;
+}
+.opciones {
+  list-style: none;
+  margin: 0px;
+  color: #fff;
+  display: flex;
+  /* background: red; */
+  justify-content: end;
+}
+.opciones > li {
+  margin: 10px 10px;
+  padding: 10px;
+}
+.opciones > li:hover {
+  background: #004e92;
+  cursor: pointer;
+}
+.opciones > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SECCION DE PRESENTACION */
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.presentacion > img {
+  width: 50%;
+}
+
+/* SECCION DE ARTICULOS */
+.articulos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px 20px;
+}
+.articulos > article {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: -4px 3px 20px 1px;
+  padding: 10px;
+}
+.articulos > article:hover {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.articulos > article > img {
+  width: 200px;
+}
